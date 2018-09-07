@@ -40,6 +40,8 @@
   
     
     
+        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    
 
 </head>
 
@@ -167,6 +169,8 @@
         
         <li><a href="https://facebook.com" target="_blank" title="Facebook" data-toggle=tooltip data-placement=top><i class="icon icon-facebook"></i></a></li>
         
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
     </ul>
 
     </nav>
@@ -190,12 +194,33 @@
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/问题/">问题</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-body">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/github/" style="font-size: 13px;">github</a> <a href="/tags/hexo/" style="font-size: 13px;">hexo</a>
+    </div>
+  </div>
+
     
       
   <div class="widget">
@@ -217,10 +242,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/问题/">问题</a>
               </p>
               <p class="item-title">
-                <a href="/2018/09/07/hexo+github搭建个人网站/" class="title">hexo+github搭建个人网站</a>
+                <a href="/2018/09/07/hexo+github搭建个人博客网站/" class="title">hexo+github搭建个人网站</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-09-07T05:36:09.829Z" itemprop="datePublished">2018-09-07</time>
@@ -291,8 +316,9 @@
   <section id="comments">
   	
        
-    <div id="uyan_frame"></div>
 
+
+    
     
   </section>
 
@@ -313,6 +339,8 @@
         <li><a href="https://twitter.com" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
         
         <li><a href="https://facebook.com" target="_blank" title="Facebook" data-toggle=tooltip data-placement=top><i class="icon icon-facebook"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
         
     </ul>
 
@@ -356,8 +384,24 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     
         
     
-    <script defer type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=[object Object]"></script>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  // id默认为当前页面url，如果url后带参数或锚点，gitment要重新初始化
+  // https://github.com/imsun/gitment/issues/55
+  // 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
+  id: 'Links', 
+  owner: 'Misaka10840', // 可以是你的GitHub用户名，也可以是github id
+  repo: 'Misaka10840.github.io',
+  oauth: {
+    client_id: 'a0923684df5eb6a5baa6',
+    client_secret: 'fb7ce84255529c3968f5a04f671622c6f6b89bbe',
+  }
+})
+gitment.render('comments')
+</script>
 
+   
 
     
     
