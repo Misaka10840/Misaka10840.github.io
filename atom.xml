@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://misaka10032.com/"/>
   <updated>2018-09-04T14:15:11.232Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://misaka10032.com/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/09/04/hello-world/"/>
-    <id>http://yoursite.com/2018/09/04/hello-world/</id>
+    <link href="http://misaka10032.com/2018/09/04/hello-world/"/>
+    <id>http://misaka10032.com/2018/09/04/hello-world/</id>
     <published>2018-09-04T14:15:11.232Z</published>
     <updated>2018-09-04T14:15:11.232Z</updated>
     
