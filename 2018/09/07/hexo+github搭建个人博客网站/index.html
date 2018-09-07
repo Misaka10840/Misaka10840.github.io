@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="安装Git Bash下载Git Bash并安装，可用以下命令查看版本。 1$ git version 安装NodeJs下载NodeJs并安装，在Custom Setup步骤选择“Add to PATH”可自动配置环境变量（在cmd中输入“path”可查看）。查看版本命令为 1$ node -v 安装hexo创建存放网站的文件夹（本文以“C:\github\hexo”为例），执行以下命令。 1234">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-07T08:02:52.156Z">
+<meta property="og:updated_time" content="2018-09-07T08:34:15.872Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人网站">
 <meta name="twitter:description" content="安装Git Bash下载Git Bash并安装，可用以下命令查看版本。 1$ git version 安装NodeJs下载NodeJs并安装，在Custom Setup步骤选择“Add to PATH”可自动配置环境变量（在cmd中输入“path”可查看）。查看版本命令为 1$ node -v 安装hexo创建存放网站的文件夹（本文以“C:\github\hexo”为例），执行以下命令。 1234">
@@ -201,7 +201,7 @@
   <div class="widget">
     <h3 class="widget-title">Categories</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/问题/">问题</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -246,7 +246,7 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="/categories/问题/">问题</a>
+                <a class="category-link" href="/categories/技术/">技术</a>
               </p>
               <p class="item-title">
                 <a href="/2018/09/07/hexo+github搭建个人博客网站/" class="title">hexo+github搭建个人网站</a>
@@ -316,7 +316,7 @@
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/问题/">问题</a>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
   </span>
 
         
@@ -348,7 +348,16 @@
 <h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>创建存放网站的文件夹（本文以“C:\github\hexo”为例），执行以下命令。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /c/github/hexo	//切换到根目录。以下命令均需要在该目录下执行。</span><br><span class="line">$ npm i -g hexo		//安装hexo</span><br><span class="line">$ hexo -v		//查看hexo版本</span><br><span class="line">$ hexo init		//初始化</span><br></pre></td></tr></table></figure>
 <p>完成后，打开文件夹可看到以下文件：</p>
-<p>·node_modules：依赖包<br>·public：存放生成页面<br>·scaffolds：命令生成文章等的模板<br>·source：用命令创建的各种文章<br>·themes：主题<br>·_config.yml：整个博客的配置<br>·db.json：source解析所得到的<br>·package.json：项目所需模块项目的配置信息</p>
+<ul>
+<li>node_modules：依赖包</li>
+<li>public：存放生成页面</li>
+<li>scaffolds：命令生成文章等的模板</li>
+<li>source：用命令创建的各种文章</li>
+<li>themes：主题</li>
+<li>_config.yml：整个博客的配置</li>
+<li>db.json：source解析所得到的</li>
+<li>package.json：项目所需模块项目的配置信息</li>
+</ul>
 <h2 id="搭桥到github"><a href="#搭桥到github" class="headerlink" title="搭桥到github"></a>搭桥到github</h2><p>创建<a href="https://github.com/" target="_blank" rel="noopener">github</a>账号并登录（本文使用账号为“Misaka10840”）。执行New repository，Repository name设定为“Misaka10840.github.io”。</p>
 <p>在gitbash中配置github账户信息，输入自己的账户名和邮箱。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"Misaka10840"</span></span><br><span class="line">$ git config --global user.email <span class="string">"misaka10840@outlook.com"</span></span><br></pre></td></tr></table></figure>
@@ -364,11 +373,18 @@
 <h2 id="网站部署"><a href="#网站部署" class="headerlink" title="网站部署"></a>网站部署</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save	//安装，只需执行一次</span><br><span class="line">$ hexo d				//部署，每次修改网站后都需要重新部署。d=deploy</span><br></pre></td></tr></table></figure>
 <p>如果发现部署后网站无变化，则需要先执行缓存清除命令“hexo clean”。</p>
 <p>如果操作正确，此时可正常访问“misaka10840.github.io”。</p>
-<h2 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h2><p>·需要已经拥有域名，本文所用的域名为“misaka10032.com”，购买于域名商godaddy。</p>
-<p>·添加CNAME。在项目source文件夹下新建无后缀、名为“CNAME”的文件，在文件中写入域名。</p>
-<p>·设置域名DNS（因域名商不同，控制台有所差异），添加A类型记录，值为ip地址。其中ip地址可以通过“ping misaka10840.github.io”指令获得。</p>
-<p>·打开github中该repositories中的Settings选项卡，本文示例为“<a href="https://github.com/Misaka10840/Misaka10840.github.io/settings" target="_blank" rel="noopener">https://github.com/Misaka10840/Misaka10840.github.io/settings</a>”。在GitHub Pages中的Custom domain填入域名并保存。</p>
-<p>·重新部署（hexo d），即可用域名打开。</p>
+<h2 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h2><ol>
+<li><p>需要已经拥有域名，本文所用的域名为“misaka10032.com”，购买于域名商godaddy。</p>
+</li>
+<li><p>添加CNAME。在项目source文件夹下新建无后缀、名为“CNAME”的文件，在文件中写入域名。</p>
+</li>
+<li><p>设置域名DNS（因域名商不同，控制台有所差异），添加A类型记录，值为ip地址。其中ip地址可以通过“ping misaka10840.github.io”指令获得。</p>
+</li>
+<li><p>打开github中该repositories中的Settings选项卡，本文示例为“<a href="https://github.com/Misaka10840/Misaka10840.github.io/settings" target="_blank" rel="noopener">https://github.com/Misaka10840/Misaka10840.github.io/settings</a>”。在GitHub Pages中的Custom domain填入域名并保存。</p>
+</li>
+<li><p>重新部署（hexo d），即可用域名打开。</p>
+</li>
+</ol>
 <h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><p>hexo的默认主题是landscape，请在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">这里</a>寻找和预览其他主题。本站所使用的主题是<a href="https://github.com/cofess/hexo-theme-pure" target="_blank" rel="noopener">pure</a>，安装命令如下。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/cofess/hexo-theme-pure themes/pure</span><br></pre></td></tr></table></figure>
 <p>打开网站根目录，修改_config.yml，在该文件中也可修改网站名、作者、语言等信息。</p>
