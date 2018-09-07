@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name=referrer content=never>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>hexo+github�������վ | Misaka&#39;s Blog</title>
+  <meta name="description" content="1.��װGit Bash����Git Bash����װ��������������鿴�汾�� 1$ git version 2.��װNodeJs����NodeJs����װ����Custom Setup����ѡ��Add to PATH�����Զ����û�����������cmd�����롰path���ɲ鿴�����鿴�汾����Ϊ 1$ node -v 3.��װhexo�">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github�������վ">
+<meta property="og:url" content="http://misaka10032.com/2018/09/07/hexo+github搭建个人网站/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.��װGit Bash����Git Bash����װ��������������鿴�汾�� 1$ git version 2.��װNodeJs����NodeJs����װ����Custom Setup����ѡ��Add to PATH�����Զ����û�����������cmd�����롰path���ɲ鿴�����鿴�汾����Ϊ 1$ node -v 3.��װhexo�">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-07T06:58:57.476Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo+github�������վ">
+<meta name="twitter:description" content="1.��װGit Bash����Git Bash����װ��������������鿴�汾�� 1$ git version 2.��װNodeJs����NodeJs����װ����Custom Setup����ѡ��Add to PATH�����Զ����û�����������cmd�����롰path���ɲ鿴�����鿴�汾����Ϊ 1$ node -v 3.��װhexo�">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://misaka10032.com/2018/09/07/hexo+github搭建个人网站/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <!-- font-awesome CSS -->
+  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/css/style.css">
+  
+    
+    
+
+</head>
+
+
+<body class="main-center theme-blue" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/Misaka10840" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">Misaka</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Programmer &amp; Student</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Xian, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/Misaka10840" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://facebook.com" target="_blank" title="Facebook" data-toggle=tooltip data-placement=top><i class="icon icon-facebook"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>Misaka aller Länder, vereinigt euch!!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+
+    
+      
+
+    
+      
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2018/09/07/hexo+github搭建个人网站/" class="title">hexo+github�������վ</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-09-07T05:36:09.829Z" itemprop="datePublished">2018-09-07</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2018/09/04/hello-world/" class="title">Hello World</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-09-04T14:15:11.232Z" itemprop="datePublished">2018-09-04</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-hexo+github搭建个人网站" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hexo+github�������վ
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2018/09/07/hexo+github搭建个人网站/" class="article-date">
+	  <time datetime="2018-09-07T05:36:09.829Z" itemprop="datePublished">2018-09-07</time>
+	</a>
+</span>
+        
+        
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/07/hexo+github搭建个人网站/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry markdown-body" itemprop="articleBody">
+      
+        <h2 id="1-��װGit-Bash"><a href="#1-��װGit-Bash" class="headerlink" title="1.��װGit Bash"></a>1.��װGit Bash</h2><p>����<a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git Bash</a>����װ��������������鿴�汾��</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git version</span><br></pre></td></tr></table></figure>
+<h2 id="2-��װNodeJs"><a href="#2-��װNodeJs" class="headerlink" title="2.��װNodeJs"></a>2.��װNodeJs</h2><p>����<a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJs</a>����װ����Custom Setup����ѡ��Add to PATH�����Զ����û�����������cmd�����롰path���ɲ鿴�����鿴�汾����Ϊ</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
+<h2 id="3-��װhexo"><a href="#3-��װhexo" class="headerlink" title="3.��װhexo"></a>3.��װhexo</h2><p>���������վ���ļ��У������ԡ�C:\github\hexo��Ϊ������ִ���������</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /c/github/hexo	//�л�����Ŀ¼�������������Ҫ�ڸ�Ŀ¼��ִ�С�</span><br><span class="line">$ npm i -g hexo		//��װhexo</span><br><span class="line">$ hexo -v			//�鿴hexo�汾</span><br><span class="line">$ hexo init		//��ʼ��</span><br></pre></td></tr></table></figure>
+<p>��ɺ󣬴��ļ��пɿ��������ļ���</p>
+<p>��node_modules��������<br>��public���������ҳ��<br>��scaffolds�������������µȵ�ģ��<br>��source����������ĸ�������<br>��themes������<br>��_config.yml���������͵�����<br>��db.json��source�������õ���<br>��package.json����Ŀ����ģ����Ŀ��������Ϣ</p>
+<h2 id="4-���w�github"><a href="#4-���w�github" class="headerlink" title="4.���ŵ�github"></a>4.���ŵ�github</h2><p>����<a href="https://github.com/" target="_blank" rel="noopener">github</a>�˺Ų���¼������ʹ���˺�Ϊ��Misaka10840������ִ��New repository��Repository name�趨Ϊ��Misaka10840.github.io����</p>
+<p>��gitbash������github�˻���Ϣ�������Լ����˻��������䡣</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"Misaka10840"</span></span><br><span class="line">$ git config --global user.email <span class="string">"misaka10840@outlook.com"</span></span><br></pre></td></tr></table></figure>
+<p>����SSH�������п��趨�������룬Ҳ����ֱ�ӻس�������</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"misaka10840@outlook.com"</span>	//����rsa��Կ��</span><br><span class="line">$ cat id_rsa.pub					//��ʾ��Կ�ԣ��˴�Ϊ������������ʱ��ָ�</span><br></pre></td></tr></table></figure>
+<p>��github����ҳ���е����SSH and GPG keys������New SSH key�����������ñ��⣬�ڡ�key���������õ���Կ�ԡ���������������֤�Ƿ�ɹ���</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h2 id="5-���o�����L"><a href="#5-���o�����L" class="headerlink" title="5.���ò�����Ŀ"></a>5.���ò�����Ŀ</h2><p>�򿪸�Ŀ¼�µ�_config.yml�ļ����ҵ��������ݲ��޸ģ�</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/Misaka10840/Misaka10840.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>��gitbash��ִ���������</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean	//��������ļ���</span><br><span class="line">$ hexo g		//���ɾ�̬�ļ���g=generate</span><br><span class="line">$ hexo s		//���������s=server</span><br></pre></td></tr></table></figure>
+<p>����������ʱ��Ĭ�Ϸ�����ַΪ��<a href="http://localhost:4000��������ʱ��վ��û�в���" target="_blank" rel="noopener">http://localhost:4000��������ʱ��վ��û�в���</a></p>
+<h2 id="6-��վ����"><a href="#6-��վ����" class="headerlink" title="6.��վ����"></a>6.��վ����</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save	//��װ��ֻ��ִ��һ��</span><br><span class="line">$ hexo d				//����ÿ���޸���վ����Ҫ���²���d=deploy</span><br></pre></td></tr></table></figure>
+<p>������ֲ������վ�ޱ仯������Ҫ��ִ�л���������hexo clean����</p>
+<p>���������ȷ����ʱ���������ʡ�<a href="http://misaka10840.github.io����" target="_blank" rel="noopener">http://misaka10840.github.io����</a></p>
+<h2 id="7-�󶨸�������"><a href="#7-�󶨸�������" class="headerlink" title="7.�󶨸�������"></a>7.�󶨸�������</h2><p>����Ҫ�Ѿ�ӵ���������������õ�����Ϊ��misaka10032.com����������������godaddy��</p>
+<p>�����CNAME������Ŀsource�ļ������½��޺�׺����Ϊ��CNAME�����ļ������ļ���д��������</p>
+<p>����������DNS���������̲�ͬ������̨�������죩�����A���ͼ�¼��ֵΪip��ַ������ip��ַ����ͨ����ping misaka10840.github.io��ָ���á�</p>
+<p>����github�и�repositories�е�Settingsѡ�������ʾ��Ϊ��<a href="https://github.com/Misaka10840/Misaka10840.github.io/settings������GitHub" target="_blank" rel="noopener">https://github.com/Misaka10840/Misaka10840.github.io/settings������GitHub</a> Pages�е�Custom domain�������������档</p>
+<p>�����²���hexo d���������������򿪡�</p>
+<h2 id="8-�޸�����"><a href="#8-�޸�����" class="headerlink" title="8.�޸�����"></a>8.�޸�����</h2><p>hexo��Ĭ��������landscape������<a href="https://hexo.io/themes/" target="_blank" rel="noopener">����</a>Ѱ�Һ�Ԥ���������⡣��վ��ʹ�õ�������<a href="https://github.com/cofess/hexo-theme-pure" target="_blank" rel="noopener">pure</a>����װ�������¡�</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/cofess/hexo-theme-pure themes/pure</span><br></pre></td></tr></table></figure>
+<p>����վ��Ŀ¼���޸�_config.yml���ڸ��ļ���Ҳ���޸���վ�������ߡ����Ե���Ϣ��</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ theme: pure	//�趨����Ϊpure</span><br></pre></td></tr></table></figure>
+<p>��themes/pure·����ͬ����һ����Ϊ_config.yml�������ļ��������ԭ���ߵ�˵���ĵ������޸ġ�</p>
+<h2 id="9-��������"><a href="#9-��������" class="headerlink" title="9.��������"></a>9.��������</h2><p>source/_posts·���´����markdown��ʽ�����£�����ֱ�ӽ�д�õ��ĵ������·����Ҳ����ʹ�ô���ָ�hexo new “����”�������±༭������ο�<a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">�ٷ�����</a>��</p>
+<p>�������º���Ҫ����ִ�в������</p>
+<h2 id="10-�ο�����"><a href="#10-�ο�����" class="headerlink" title="10.�ο�����"></a>10.�ο�����</h2><p><a href="https://www.cnblogs.com/visugar/p/6821777.html" target="_blank" rel="noopener">hexo���㿪ʼ�������</a><br><a href="https://www.cnblogs.com/penglei-it/p/hexo_domain_name.html" target="_blank" rel="noopener">Hexoվ��֮��������</a><br><a href="https://blog.csdn.net/zhy421202048/article/details/77877580" target="_blank" rel="noopener">hexo �޸�����</a></p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://misaka10032.com/2018/09/07/hexo+github搭建个人网站/" title="hexo+github�������վ" target="_blank" rel="external">http://misaka10032.com/2018/09/07/hexo+github搭建个人网站/</a>
+    </li>
+    
+    
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/Misaka10840" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/Misaka10840" target="_blank"><span class="text-dark">Misaka</span><small class="ml-1x">Programmer &amp; Student</small></a></h3>
+        <div>Misaka desu, yo ro shi ku o ne ga i shi ma su!</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+       
+    <div id="uyan_frame"></div>
+
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2018/09/04/hello-world/" title="Hello World"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/Misaka10840" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://facebook.com" target="_blank" title="Facebook" data-toggle=tooltip data-placement=top><i class="icon icon-facebook"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+  
+    
+    
+    
+        <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+    
+    
+        
+<script defer src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+        
+    
+    <script defer type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=[object Object]"></script>
+
+
+    
+    
+
+
+
+</body>
+</html>
