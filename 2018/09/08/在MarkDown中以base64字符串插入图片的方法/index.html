@@ -17,17 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Repositories | Misaka&#39;s Blog</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Repositories">
-<meta property="og:url" content="http://misaka10032.com/repository/index.html">
+  <title>在MarkDown中以base64字符串插入图片的方法 | Misaka&#39;s Blog</title>
+  <meta name="description" content="方法介绍MarkDown中插入图片有几种方式，其中一种方法可以将图片以base64字符串的形式写入MarkDown文件，做到图文不分离。在该网站上传图片，可获得此图片的base64字符编码。在MarkDown文件中使用该编码的方式如下 123![sample][img_1]//此处可任意添加文字[img_1]: data:image/jpeg;base64,……	//此处为图片的base64编码">
+<meta name="keywords" content="MarkDown,python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在MarkDown中以base64字符串插入图片的方法">
+<meta property="og:url" content="http://misaka10032.com/2018/09/08/在MarkDown中以base64字符串插入图片的方法/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="方法介绍MarkDown中插入图片有几种方式，其中一种方法可以将图片以base64字符串的形式写入MarkDown文件，做到图文不分离。在该网站上传图片，可获得此图片的base64字符编码。在MarkDown文件中使用该编码的方式如下 123![sample][img_1]//此处可任意添加文字[img_1]: data:image/jpeg;base64,……	//此处为图片的base64编码">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-06T11:46:26.777Z">
+<meta property="og:updated_time" content="2018-09-08T06:30:52.611Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Repositories">
+<meta name="twitter:title" content="在MarkDown中以base64字符串插入图片的方法">
+<meta name="twitter:description" content="方法介绍MarkDown中插入图片有几种方式，其中一种方法可以将图片以base64字符串的形式写入MarkDown文件，做到图文不分离。在该网站上传图片，可获得此图片的base64字符编码。在MarkDown文件中使用该编码的方式如下 123![sample][img_1]//此处可任意添加文字[img_1]: data:image/jpeg;base64,……	//此处为图片的base64编码">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://misaka10032.com/repository/index.html">
+  <link rel="canonical" href="http://misaka10032.com/2018/09/08/在MarkDown中以base64字符串插入图片的方法/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -40,11 +44,13 @@
   
     
     
+        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    
 
 </head>
 
 
-<body class="main-center theme-blue no-sidebar" itemscope itemtype="http://schema.org/WebPage">
+<body class="main-center theme-blue" itemscope itemtype="http://schema.org/WebPage">
   <header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
@@ -306,46 +312,157 @@
 </aside>
 
   
-  <main class="main" role="main">
-  <article class="article article-repository article-type-list" itemscope="">
-  <header class="article-header">
-    <h1 itemprop="title">Repositories</h1>
-    <p class="text-muted">I have <span id="repo-count">0</span> projects on Github</p>
-  </header>
-  <div class="article-body">
-    <div class="repo-content">
-      <div class="blankslate">
-        <p>正在加载...</p>
+  
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">Catalogue</h3>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法介绍"><span class="toc-number">1.</span> <span class="toc-text">方法介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">2.</span> <span class="toc-text">参考资料</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-在MarkDown中以base64字符串插入图片的方法" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      在MarkDown中以base64字符串插入图片的方法
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2018/09/08/在MarkDown中以base64字符串插入图片的方法/" class="article-date">
+	  <time datetime="2018-09-08T05:51:40.521Z" itemprop="datePublished">2018-09-08</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/问题/">问题</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/MarkDown/">MarkDown</a>, <a class="article-tag-link" href="/tags/python/">python</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/08/在MarkDown中以base64字符串插入图片的方法/#comments" class="article-comment-link">Comments</a></span>
+        
       </div>
     </div>
-  </div>
-</article>
+    <div class="article-entry markdown-body" itemprop="articleBody">
+      
+        <h2 id="方法介绍"><a href="#方法介绍" class="headerlink" title="方法介绍"></a>方法介绍</h2><p>MarkDown中插入图片有几种方式，其中一种方法可以将图片以base64字符串的形式写入MarkDown文件，做到图文不分离。在<a href="http://base64.xpcha.com/indexie.php" target="_blank" rel="noopener">该网站</a>上传图片，可获得此图片的base64字符编码。在MarkDown文件中使用该编码的方式如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![sample][img_1]</span><br><span class="line">//此处可任意添加文字</span><br><span class="line">[img_1]: data:image/jpeg;base64,……	//此处为图片的base64编码</span><br></pre></td></tr></table></figure>
+<p>获得图片的base64编码也可用python实现。以下程序可将同目录下一张名为“test.jpg”的图像转换为base64编码字符串，并输出到文本文件“out.txt”。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> base64</span><br><span class="line">f=open(<span class="string">'test.jpg'</span>,<span class="string">'rb'</span>)</span><br><span class="line">ls_f=base64.b64encode(f.read())</span><br><span class="line">f=open(<span class="string">'out.txt'</span>,<span class="string">'w'</span>)</span><br><span class="line">print(ls_f,file=f)</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
+<p>如果要将base64编码字符还原为图片，以下程序可读取同目录下“in.txt”中的字符串，并将其转换为名为“test.jpg”的图片（要求该字符串确实对应jpg格式图像）。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> base64</span><br><span class="line">f=open(<span class="string">'in.txt'</span>)</span><br><span class="line">bs=f.read()</span><br><span class="line">imgdata=base64.b64decode(bs)</span><br><span class="line">f=open(<span class="string">'test.jpg'</span>,<span class="string">'wb'</span>)</span><br><span class="line">f.write(imgdata)</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>[1] <a href="https://www.jianshu.com/p/61694f1d50ac" target="_blank" rel="noopener">Markdown不用上传也能插入图片</a><br>[2] <a href="https://www.jianshu.com/p/280c6a6f2594" target="_blank" rel="noopener">MarkDown添加图片的三种方式</a></p>
 
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://misaka10032.com/2018/09/08/在MarkDown中以base64字符串插入图片的方法/" title="在MarkDown中以base64字符串插入图片的方法" target="_blank" rel="external">http://misaka10032.com/2018/09/08/在MarkDown中以base64字符串插入图片的方法/</a>
+    </li>
+    
+    
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/Misaka10840" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/Misaka10840" target="_blank"><span class="text-dark">Misaka</span><small class="ml-1x">Programmer &amp; Student</small></a></h3>
+        <div>Misaka desu, yo ro shi ku o ne ga i shi ma su!</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+       
+
+
+    
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2018/09/08/OpenCV 3.4配置（使用VS 2017平台和C++语言）/" title="OpenCV 3.4配置（使用VS 2017平台和C++语言）"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="Catalogue" role="button">
+        <span>[&nbsp;</span><span>Catalogue</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
   
 
 
-
-<!--Github项模版-->
-<script type="text/template" id="list-template">
-  <li class="col-sm-6 col-md-6 col-lg-4">
-    <div class="repo hover-shadow hover-grow">
-      <div class="repo-image geopattern" data-pattern-id="{%=name%}"></div>
-      <h3 class="repo-title"><a href="{%=clone_url%}" target="_blank" rel="external nofollow noopener noreferrer">{%=full_name%}</a></h3>
-      <p class="repo-body">{%=description%}</p>
-      <div class="repo-meta">
-        <span class="meta meta-type pull-left" aria-label="{%=language%} project">{%=language%}</span>
-        <span class="meta meta-star" aria-label="{%=stargazers_count%} stars"><i class="icon icon-star-fill"></i> {%=stargazers_count%}</span>
-        <span class="meta meta-fork" aria-label="{%=forks_count%} forks"><i class="icon icon-code-fork"></i> {%=forks_count%}</span>
-        <span class="meta meta-last-updated" aria-label="最后更新时间：{%=updated_at%}">
-        <i class="icon icon-clock"></i> <time datetime="{%=updated_at%}">{%=updated_at%}</time></span>
-      </div>
-    </div>
-  </li>
-</script>
-<!--获取失败模版-->
-<script type="text/template" id="error-template">
-  <h3>加载失败</h3><p>请刷新或稍后再试...</p>
-</script>
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -380,51 +497,6 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <script src="/js/application.js"></script>
   
     
-        <script type="text/javascript">
-var open = function() {
-  var baiduTpl = new Object();
-  var handleTpl = function() {
-    baiduTpl.list = baidu.template("list-template");
-    baiduTpl.error = baidu.template("error-template");
-  };
-
-  var handleGithub = function() {
-    var repoContainer = $('.repo-content');
-    var errorContainer = repoContainer.find(".blankslate");
-    var countContainer = $("#repo-count");
-
-    $.get("https://api.github.com/users/Misaka10840/repos", function(result) {
-      if (result) {
-        errorContainer.remove();
-        countContainer.text(result.length); //设置项目个数
-        var ul = $("<ul class='repo-list row clearfix'></ul>");
-        for (var i in result) {
-          var repo = result[i];
-          repo.updated_at = repo.updated_at.substring(0, repo.updated_at.lastIndexOf("T"));
-          var html = baiduTpl.list(repo);
-          ul.append(html);
-        }
-        repoContainer.append(ul);
-        $(".geopattern").each(function() {
-          $(this).geopattern($(this).data('pattern-id'));
-        });
-      } else {
-        errorContainer.append(baiduTpl.error());
-      }
-    });
-  };
-
-  return {
-    init: function() {
-      handleTpl();
-      handleGithub();
-    }
-  }
-};
-$(open().init);
-</script>
-
-    
     
     
         <script>
@@ -447,6 +519,34 @@ $(open().init);
     
     
     
+        
+<script defer src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+        
+    
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  // id默认为当前页面url，如果url后带参数或锚点，gitment要重新初始化
+  // https://github.com/imsun/gitment/issues/55
+  // 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
+  id: '在MarkDown中以base64字符串插入图片的方法', 
+  owner: 'Misaka10840', // 可以是你的GitHub用户名，也可以是github id
+  repo: 'Misaka10840.github.io',
+  oauth: {
+    client_id: 'a0923684df5eb6a5baa6',
+    client_secret: 'fb7ce84255529c3968f5a04f671622c6f6b89bbe',
+  }
+})
+gitment.render('comments')
+</script>
+
+   
+
     
     
 
